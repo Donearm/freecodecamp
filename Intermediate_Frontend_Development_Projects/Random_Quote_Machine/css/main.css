@@ -9,3 +9,11 @@ html, body {
 }
 
 #quote {}
+
+#buttons-container {
+	background-color: #fefefe;
+}
+
+#quote-container {
+	background-color: #ababab;
+}
