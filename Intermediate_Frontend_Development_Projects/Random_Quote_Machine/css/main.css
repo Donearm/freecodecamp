@@ -17,3 +17,8 @@ html, body {
 #quote-container {
 	background-color: #ababab;
 }
+
+.card {
+	width: 16em;
+	margin: 2em;
+}
