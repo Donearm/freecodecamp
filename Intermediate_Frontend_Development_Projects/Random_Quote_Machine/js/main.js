@@ -41,6 +41,6 @@ function newQuote() {
 	let randColour = Math.floor(Math.random() * colours.length);
 	let quoteblock = document.getElementById("quote");
 	quoteblock.innerHTML = quotes[randomNumber];
-	$("#quote-container").css("background-color", colours[randColour]);
+	$("#quote-container").css("transition", "background-color .7s").css("background-color", colours[randColour]);
 
 }
