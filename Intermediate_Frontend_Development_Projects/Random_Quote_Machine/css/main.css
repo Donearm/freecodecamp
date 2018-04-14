@@ -32,3 +32,6 @@ html, body {
 	padding: 1em;
 	padding-left: 0.1em;
 }
+.card-text a:link {
+	text-decoration: none;
+}
