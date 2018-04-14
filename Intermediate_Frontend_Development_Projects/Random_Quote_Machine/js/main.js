@@ -33,7 +33,12 @@ var quotes = [
 	"What evil is there in seeing a man possess a woman? Why, the beasts would be more free than we! It seems to me that that which is given us by nature for our own preservation ought to be worn round the neck as a pendant and in the hat for a medal.<br>Pietro Aretino",
 	"Once I moved about like the wind. Now I surrender to you and that is all.<br>Geronimo",
 	"Never, ever go near power. Don't become friends with anyone who has real power. It's dangerous.<br>Stanley Kubrick",
-	"I don't like doing interviews. There is always the problem of being misquoted or, what's even worse, of being quoted exactly.<br>Stanley Kubrick"
+	"I don't like doing interviews. There is always the problem of being misquoted or, what's even worse, of being quoted exactly.<br>Stanley Kubrick",
+	"Be yourself; everyone else is already taken.<br>Oscar Wilde",
+	"So many books, so little time.<br>Frank Zappa",
+	"A room without books is like a body without a soul.<br>Cicero",
+	"In three words I can sum up everything I've learned about life: it goes on.<br>Robert Frost",
+	"Without music, life would be a mistake.<br>Friedrich Nietzsche"
 ]
 
 function newQuote() {
