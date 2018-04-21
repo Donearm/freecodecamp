@@ -5,6 +5,10 @@ if ("geolocation" in navigator) {
 	$("#weather").html("<p>Geolocation is not supported by this browser, sorry</p>");
 }
 
+function celsiusToF(temp) {
+	let fTemp = temp * 9 / 5 + 32;
+	return fTemp;
+}
 
 function showPosition(position) {
 	fetch(`https://fcc-weather-api.glitch.me/api/current?lat=${position.coords.latitude}&lon=${position.coords.longitude}`)
