@@ -13,6 +13,7 @@ function showPosition(position) {
 		})
 		.then(function (json) {
 			console.log(json);
-			$("#weather").html("<p>In " + json.name + " we have " + json.weather[0].description + "<br>Temperature is " + json.main.temp + "°C<br><img src=\"" + json.weather[0].icon + "\"></p>");
+			$("#weather").html("<p>In " + json.name + " we have " + json.weather[0].description + "<br>Temperature is " + json.main.temp + "°C<br></p>");
+			$("#weathericon").html("<img src=\"" + json.weather[0].icon + "\">");
 		});
 };

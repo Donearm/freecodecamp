@@ -8,7 +8,7 @@ body {
   margin: 65px 0 0;
 }
 
-#weather {
+#weather, #weathericon {
   width: 350px;
   margin: 0px auto;
   text-align: center;
