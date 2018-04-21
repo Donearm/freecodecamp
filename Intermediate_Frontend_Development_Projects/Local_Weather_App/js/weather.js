@@ -5,17 +5,14 @@ if ("geolocation" in navigator) {
 	$("#weather").html("<p>Geolocation is not supported by this browser, sorry</p>");
 }
 
-async function fetchWeather(lati, long) {
-	const URL = `https://fcc-weather-api.glitch.me/api/current?lat=${lati}&lon=${long}`;
-	const fetchResult = fetch(URL);
-	const response = await fetchResult;
-	const jsonData = await response.json();
-	return jsonData;
-}
 
 function showPosition(position) {
-	let weather = fetchWeather(Math.floor(position.coords.latitude), Math.floor(position.coords.longitude));
-	console.log(weather);
-
-	$("#weather").html(position.coords.latitude + " " + position.coords.longitude);
+	fetch(`https://fcc-weather-api.glitch.me/api/current?lat=${position.coords.latitude}&lon=${position.coords.longitude}`)
+		.then(function (response) {
+			return response.json();
+		})
+		.then(function (json) {
+			console.log(json);
+			$("#weather").html("<p>In " + json.name + " we have " + json.weather[0].description + "<br>Temperature is " + json.main.temp + "°C<br><img src=\"" + json.weather[0].icon + "\"></p>");
+		});
 };
