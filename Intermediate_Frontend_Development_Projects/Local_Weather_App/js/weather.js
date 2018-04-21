@@ -6,8 +6,13 @@ if ("geolocation" in navigator) {
 }
 
 function celsiusToF(temp) {
-	let fTemp = temp * 9 / 5 + 32;
+	let fTemp = Math.floor(temp * 9 / 5 + 32);
 	return fTemp;
+}
+
+function fahrenheitToC(temp) {
+	let cTemp = Math.floor(temp * 1.8 + 32);
+	return cTemp;
 }
 
 function showPosition(position) {
