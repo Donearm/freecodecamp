@@ -22,7 +22,8 @@ function showPosition(position) {
 		})
 		.then(function (json) {
 			console.log(json);
-			$("#weather").html("<p>In " + json.name + " we have " + json.weather[0].description + "<br>Temperature is " + json.main.temp + "°C<br></p>");
+			$("#weather").html("<p>In " + json.name + " we have " + json.weather[0].description + "</p>");
+			$("#temp").html("<p>Temperature is " + json.main.temp + "</p>");
 			$("#weathericon").html("<img src=\"" + json.weather[0].icon + "\">");
 		});
 };
