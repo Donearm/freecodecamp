@@ -21,9 +21,24 @@ function showPosition(position) {
 			return response.json();
 		})
 		.then(function (json) {
-			console.log(json);
+			let tempC = json.main.temp;
+			let tempF = celsiusToF(tempC);
+			let toggleT = false;
 			$("#weather").html("<p>In " + json.name + " we have " + json.weather[0].description + "</p>");
-			$("#temp").html("<p>Temperature is " + json.main.temp + "</p>");
+			$("#temp").children("p").text("Temperature is " + tempC);
+			$("#tempswitch").on('click', function() {
+				toggleT = !toggleT;
+				if (toggleT) {
+					$("#temp").children("p").text("Temperature is " + tempF);
+					//$("#tempswitch").text('F');
+					$("#temp").children("a").text("F");
+				} else {
+					$("#temp").children("p").text("Temperature is " + tempC);
+					$("#temp").children("a").text("C");
+					//$("#tempswitch").text("C");
+				}
+			});
 			$("#weathericon").html("<img src=\"" + json.weather[0].icon + "\">");
 		});
 };
+
