@@ -13,3 +13,7 @@ body {
   margin: 0px auto;
   text-align: center;
 }
+
+#weathericon img {
+	width: 80px;
+}
