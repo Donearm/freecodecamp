@@ -1,3 +1,11 @@
+const colours = [
+	"#2a3439",
+	"#2887c8",
+	"#e8f48c",
+	"#fcc200",
+	"#fe5a1d"
+]
+
 /* Check if browser supports geolocation */
 if ("geolocation" in navigator) {
 	navigator.geolocation.getCurrentPosition(showPosition);
@@ -37,6 +45,22 @@ function showPosition(position) {
 				}
 			});
 			$("#weathericon").html("<img src=\"" + json.weather[0].icon + "\">");
+
+			$(document).ready(function () {
+				// Change background color according to temperature
+				if (tempC < 0) {
+					$("body").css("background-color", colours[0]).css("color", "#010101");
+				} else if (tempC >= 0 && tempC < 10) {
+					$("body").css("background-color", colours[1]).css("color", "#010101");
+				} else if (tempC >= 10 && tempC < 20) {
+					$("body").css("background-color", colours[2]);
+				} else if (tempC >= 20 && tempC < 30) {
+					$("body").css("background-color", colours[3]);
+				} else {
+					$("body").css("background-color", colours[4]);
+				}
+			});
 		});
+
 };
 
