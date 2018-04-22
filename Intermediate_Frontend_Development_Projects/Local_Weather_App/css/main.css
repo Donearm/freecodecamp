@@ -8,6 +8,10 @@ body {
   margin: 65px 0 0;
 }
 
+.btn-circle {
+	border-radius: 24px;
+}
+
 #weather, #weathericon, #temp {
   width: 350px;
   margin: 0px auto;
