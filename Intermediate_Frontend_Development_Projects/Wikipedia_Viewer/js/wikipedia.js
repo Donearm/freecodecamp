@@ -9,9 +9,17 @@ $(document).ready(function() {
 		success: function (data, textStatus, jqXHR) {
 			let wikibody = data.parse.text["*"];
 			let wikititle = data.parse.title;
+			let blurb = $('<div></div>').html(wikibody);
+
+			// Point all href attributes to english Wikipedia's 
+			// corresponding pages
+			blurb.find("a").each(function() {
+				let newUrl = $(this).attr('href').replace('/wiki', 'https://en.wikipedia.org/wiki');
+				$(this).attr('href', newUrl);
+			});
 			$("#articletitle").html(wikititle);
-			$("#article").html(wikibody);
-			console.log(wikititle);
+			$("#article").html(blurb);
+			console.log(data);
 		},
 	});
 });
