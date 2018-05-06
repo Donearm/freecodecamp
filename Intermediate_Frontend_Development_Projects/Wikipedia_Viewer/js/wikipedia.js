@@ -17,6 +17,12 @@ $(document).ready(function() {
 				let newUrl = $(this).attr('href').replace('/wiki', 'https://en.wikipedia.org/wiki');
 				$(this).attr('href', newUrl);
 			});
+
+			// remove occasional cite errors
+			blurb.find('.mw-ext-cite-error').remove();
+			// remove any references
+			blurb.find('sup').remove();
+
 			$("#articletitle").html(wikititle);
 			$("#article").html(blurb);
 			console.log(data);
