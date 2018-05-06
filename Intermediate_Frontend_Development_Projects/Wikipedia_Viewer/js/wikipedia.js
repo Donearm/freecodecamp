@@ -7,7 +7,11 @@ $(document).ready(function() {
 		async: false,
 		dataType: "json",
 		success: function (data, textStatus, jqXHR) {
-			$("#article").text(data);
+			let wikibody = data.parse.text["*"];
+			let wikititle = data.parse.title;
+			$("#articletitle").html(wikititle);
+			$("#article").html(wikibody);
+			console.log(wikititle);
 		},
 	});
 });
