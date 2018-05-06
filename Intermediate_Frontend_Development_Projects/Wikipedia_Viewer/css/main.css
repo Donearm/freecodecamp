@@ -4,6 +4,10 @@ body {
   background: #fff;
 }
 
+#searchform {
+	width: 20%;
+}
+
 .btn-circle {
 	border-radius: 24px;
 }
