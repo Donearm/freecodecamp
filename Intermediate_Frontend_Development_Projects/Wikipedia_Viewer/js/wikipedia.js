@@ -44,16 +44,18 @@ $(document).ready(function() {
 		$.ajax({
 			type: "GET",
 /*			url: "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=Jimi_Hendrix&callback=?", */
-			url: "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + encodeURIComponent(search[0].value) + "&callback=?",
+			url: "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + encodeURIComponent(search[0].value),
 			contentType: "application/json; charset=utf-8",
 			async: false,
 			dataType: "json",
+			data: {
+				origin: "*"
+			},
 			success: function (data, textStatus, jqXHR) {
 				console.log(data);
 				let wikibody = data.parse.text["*"];
 				let wikititle = data.parse.title;
 				let blurb = $('<div></div>').html(wikibody);
-				console.log(url);
 
 				// Point all href attributes to english Wikipedia's 
 				// corresponding pages
