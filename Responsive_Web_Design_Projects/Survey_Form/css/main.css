@@ -1,0 +1,20 @@
+body {
+	color: #000011;
+	background-color: #445566;
+}
+
+#leftcol, #rightcol { }
+
+#centrecol {
+	background-color: #eeeeee;
+}
+
+#titlerow, #descriptionrow {
+	color: #eeeeee;
+	background-color: #445566;
+	text-align: center;
+}
+
+footer p {
+	text-align: center;
+}
