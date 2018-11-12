@@ -42,14 +42,207 @@
                                                           placeholder="Enter your email">
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="age" id="number-label">*Age:</label>
-                  <input type="number" class="form-control" id="age" 
+                  <label for="number" id="number-label">*Age:</label>
+                  <input type="number" class="form-control" id="number" 
                   min="1" max="200" aria-describedby="ageHelp" placeholder="Enter your age">
                 </div>
               </div>
             </form>
           </p>
           <div class="row">
+            <div class="col-md-6">
+              <p class="text-right">
+                Which option best describes your current role? 
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" 
+                                                                id="dropdownRole"
+                                                                data-toggle="dropdown"
+                                                                aria-haspopup="true"
+                                                                aria-expanded="false">
+                  Select role</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownRole">
+                  <button class="dropdown-item" type="button">Student</button>
+                  <button class="dropdown-item" type="button">Full Time 
+                    Job</button>
+                  <button class="dropdown-item" type="button">Part Time 
+                    Job</button>
+                  <button class="dropdown-item" type="button">Full Time 
+                    Learner</button>
+                  <button class="dropdown-item" type="button">Prefer not 
+                    to say</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="text-right">
+              How likely is that you would recommend freeCodeCamp to a 
+              friend?
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" 
+                name="inlineRecommend1" id="inlineRecommendDefinitely" 
+                                        value="option1"><label 
+                                        class="form-check-label" 
+                                        for="inlineRecommendDefinitely">Definitely</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" 
+                name="inlineRecommend1" id="inlineRecommendMaybe" 
+                                        value="option2"><label 
+                                        class="form-check-label" 
+                                        for="inlineRecommendMaybe">Maybe</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" 
+                name="inlineRecommend1" id="inlineRecommendNotSure" 
+                                        value="option3"><label 
+                                        class="form-check-label" 
+                                        for="inlineRecommendNotSure">Not 
+                Sure</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="text-right">
+              What do you like most in FCC: 
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" 
+                                                                id="dropdownLike"
+                                                                data-toggle="dropdown"
+                                                                aria-haspopup="true"
+                                                                aria-expanded="false">
+                  Select an option</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownLike">
+                  <button class="dropdown-item" type="button">Challenges</button>
+                  <button class="dropdown-item" type="button">Projects</button>
+                  <button class="dropdown-item" type="button">Community</button>
+                  <button class="dropdown-item" type="button">Open Source</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="text-right">
+              Things that should be improved in the future (check all 
+              that apply): 
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsFEP" 
+                                        value="optionI1"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsFEP">Front-end 
+                Projects</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsBEP" 
+                                        value="optionI2"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsBEP">Back-end 
+                Projects</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsDV" 
+                                        value="optionI3"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsDV">Data 
+                Visualization</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsCHL" 
+                                        value="optionI4"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsCHL">Challenges</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsOSS" 
+                                        value="optionI5"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsOSS">Open 
+                Source Community</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsGHR" 
+                                        value="optionI6"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsGHR">Gitter 
+                Help Rooms</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsVID" 
+                                        value="optionI7"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsVID">Videos</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsCM" 
+                                        value="optionI8"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsCM">City 
+                Meetups</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsWIKI" 
+                                        value="optionI9"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsWIKI">Wiki</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsFRM" 
+                                        value="optionI10"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsFRM">Forum</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" 
+                name="inlineImprovements1" id="inlineImprovementsAC" 
+                                        value="optionI11"><label 
+                                        class="form-check-label" 
+                                        for="inlineImprovementsAC">Additional 
+                Courses</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="text-right">Any Comments or Suggestions?</p>
+            </div>
+            <div class="col-md-6">
+              <textarea class="form-control" aria-label="comments and 
+              suggestions"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <button class="btn btn-primary" id="submit">Submit</button>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+          <div class="row" id="footer">
             <div class="col-md-12">
               <footer><p>Made with lots of love by <a 
                                  href="https://www.gianlucafiore.it">Gianluca 
