@@ -1,6 +1,7 @@
-body {
+html, body {
 	color: #000011;
 	background-color: #445566;
+	height: 100%;
 }
 
 #leftcol, #rightcol { }
@@ -10,8 +11,6 @@ body {
 }
 
 #titlerow, #descriptionrow {
-	color: #eeeeee;
-	background-color: #445566;
 	text-align: center;
 }
 
