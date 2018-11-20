@@ -31,7 +31,12 @@ a {
 	margin-top: 3em;
 }
 
+#pricing {
+	margin-bottom: 4em;
+}
+
 footer {
+	width: 100%;
 	background: navy;
 }
 footer a {
