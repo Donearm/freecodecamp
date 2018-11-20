@@ -10,3 +10,20 @@ html, body {
 	font-size: 140%;
 }
 
+.btn {
+	background: navy;
+}
+a {
+	color: navy;
+}
+
+footer {
+	background: navy;
+}
+footer a {
+	color: #FFFACD;
+}
+footer a:hover {
+	color: #FFFACD;
+}
+
