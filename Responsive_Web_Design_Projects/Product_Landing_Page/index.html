@@ -46,14 +46,16 @@
                                                   aria-describedby="emailForm"
                                                   placeholder="Enter your 
                                                   email">
-          <button id="submit">Submit</button>
+          <small>We won't ever share your email with anyone 
+            else.</small><br />
+          <button class="btn btn-primary" id="submit">Submit</button>
         </form>
         <div id="features">
           <h4>Features</h4>
-          <ul>
-            <li>Premium Ingredients</li>
-            <li>Fast Shipping</li>
-            <li>Made with Love</li>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Premium Ingredients</li>
+            <li class="list-group-item">Fast Shipping</li>
+            <li class="list-group-item">Made with Love</li>
           </ul>
         </div>
 
@@ -62,6 +64,8 @@
           <p>Our pizza is made following the original neapolitan recipe, no 
           buts or exceptions. For a glance at what that means and how it is 
           not a common pizza, see the following video:
+          </p>
+          <p>
           <embed id="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Cq90lUQUCUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </embed>
@@ -70,10 +74,56 @@
 
         <div id="pricing">
           <h4>Pricing</h4>
-          Margherita = 4€
-          Prosciutto = 5€
-          4 Cheeses = 5,5€
-          Salami = 6€
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action 
+            flex-column align-items-stretch">
+              <div class="d-flex w-50 justify-content-center">
+                <p>
+                  <h5 class="mb-1">Margherita = 4€</h5>
+                </p>
+                <p>
+                  <button class="orderpizza btn 
+                  btn-primary">Order</button>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action 
+            flex-column align-items-stretch">
+              <div class="d-flex w-50 justify-content-center">
+                <p>
+                <h5 class="mb-1">Prosciutto = 5€</h5>
+                </p>
+                <p>
+                <button class="orderpizza btn 
+                btn-primary">Order</button>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action 
+            flex-column align-items-stretch">
+              <div class="d-flex w-50 justify-content-center">
+                <p>
+                <h5 class="mb-1">4 Cheeses = 5,5€</h5>
+                </p>
+                <p>
+                <button class="orderpizza btn 
+                btn-primary">Order</button>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action 
+            flex-column align-items-stretch">
+              <div class="d-flex w-50 justify-content-center">
+                <p>
+                <h5 class="mb-1">Salami = 6€</h5>
+                </p>
+                <p>
+                <button class="orderpizza btn 
+                btn-primary">Order</button>
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="col-md-2"></div>
