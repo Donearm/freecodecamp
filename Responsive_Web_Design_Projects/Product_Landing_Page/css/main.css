@@ -17,6 +17,10 @@ a {
 	color: navy;
 }
 
+#email {
+	width: 500px;
+}
+
 footer {
 	background: navy;
 }
