@@ -21,6 +21,10 @@ a {
 	width: 500px;
 }
 
+.chapter-heading {
+	margin-top: 3em;
+}
+
 footer {
 	background: navy;
 }
