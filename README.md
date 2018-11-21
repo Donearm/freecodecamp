@@ -5,7 +5,7 @@
 Collection of Freecodecamp projects, Just the most advanced ones, as it making this repository a basic portfolio
 
 + **Survey Form**
-![Survey Form](Responsive_Web_Design_Projects/Survey_Form/survey_form.png)
+![Survey Form screenshot](Responsive_Web_Design_Projects/Survey_Form/survey_form.png)
 
 + **Product Landing Page**
 ![Product Landing Page screenshot](Responsive_Web_Design_Projects/Product_Landing_Page/product_landing_page.png)
