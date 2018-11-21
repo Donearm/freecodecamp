@@ -16,6 +16,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 140%;
 }
 
+#maintitle {
+	/* Keep the title visible when the page first appears */
+	margin-top: 2em;
+}
+
 .btn {
 	background: navy;
 }

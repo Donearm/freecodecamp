@@ -38,7 +38,7 @@
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8">
-            <h1><img id="header-img" height="128px" src="pizzaislove-pizzaislife.png" /> Handcrafted, home-made pizza with love</h1>
+            <h1 id="maintitle"><img id="header-img" height="128px" src="pizzaislove-pizzaislife.png" />Handcrafted, home-made pizza with love</h1>
             <h5 id="subheader">We believe pizza is the ultimate dish, the one that represents
             life. We thus have the maximum respect and love for 
             it.</h5>
@@ -54,12 +54,13 @@
           <div class="d-flex flex-column justify-content-center 
             align-items-center">
             <form id="form" action="https://www.freecodecamp.com/email-submit">
-              <input type="email" class="form-control p-6" id="email"
+              <input type="email" class="form-control p-6" id="email" 
+                                                      name="email"
                                                       aria-describedby="emailForm"
                                                       placeholder="Enter your email">
               <small class="p-2">We won't ever share your email with anyone 
                 else.</small><br />
-              <button class="btn btn-primary p-2" id="submit">Submit</button>
+              <input type="submit" class="btn btn-primary p-2" id="submit" value="Submit"></input>
             </form>
           </div>
           <div id="features">
