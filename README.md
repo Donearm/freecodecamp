@@ -7,6 +7,9 @@ Collection of Freecodecamp projects, Just the most advanced ones, as it making t
 + **Survey Form**
 ![Survey Form](Responsive_Web_Design_Projects/Survey_Form/survey_form.png)
 
++ **Product Landing Page**
+![Product Landing Page screenshot](Responsive_Web_Design_Projects/Product_Landing_Page/product_landing_page.png)
+
 + **Random Quote Machine**
 ![Random Quote Machine screenshot](Intermediate_Frontend_Development_Projects/Random_Quote_Machine/Random_Quote_Machine.jpg)
 
