@@ -25,7 +25,7 @@ html, body {
 
 #main-doc {
 	margin-left: 200px;
-	border-left: 1px solid #0d47a1;
+	border-left: 2px solid #0d47a1;
 	padding: 1em 0 1em 1.5em;
 }
 
@@ -42,4 +42,6 @@ header {
 }
 section.main-section header {
 	font-size: 26pt;
+	border-bottom: 2px solid #0d47a1;
+	margin-bottom: 0.4em;
 }
